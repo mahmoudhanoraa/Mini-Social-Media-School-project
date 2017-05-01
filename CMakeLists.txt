@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.6)
+project(Mini_Social_Media_School_Project)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(SOURCE_FILES main.cpp)
+add_executable(Mini_Social_Media_School_Project ${SOURCE_FILES})
