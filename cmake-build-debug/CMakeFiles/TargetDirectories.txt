@@ -1,0 +1,3 @@
+/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles/Mini_Social_Media_School_Project.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++.exe   -std=c++11 -g  -Wl,--enable-auto-import CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o  -o Mini_Social_Media_School_Project.exe -Wl,--out-implib,libMini_Social_Media_School_Project.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
