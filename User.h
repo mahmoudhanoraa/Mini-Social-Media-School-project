@@ -18,10 +18,10 @@ private:
     vector<User> friends;
     vector<User> blocked;
     int userId;
+    static int userIdCount;
 
 public:
     User(const string &userName, const string &password, const string &email);
-    User();
 
     const string &getUserName() const;
 

@@ -8,9 +8,10 @@
 User::User(const string &userName, const string &password, const string &email) : userName(userName),
                                                                                   password(password), email(email) {
     profile = Profile();
+    userId = ++userIdCount;
 }
 
-User::User() {}
+
 
 const string &User::getUserName() const {
     return userName;
