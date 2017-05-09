@@ -81,17 +81,173 @@ CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o.provides: CMakeFiles/
 CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o
 
 
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o: CMakeFiles/Mini_Social_Media_School_Project.dir/flags.make
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o: ../User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o -c /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/User.cpp
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/User.cpp > CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.i
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/User.cpp -o CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.s
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.requires:
+
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.requires
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.provides: CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.provides.build
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.provides
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o
+
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o: CMakeFiles/Mini_Social_Media_School_Project.dir/flags.make
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o: ../Comment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o -c /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Comment.cpp
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Comment.cpp > CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.i
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Comment.cpp -o CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.s
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.requires:
+
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.requires
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.provides: CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.provides.build
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.provides
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o
+
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o: CMakeFiles/Mini_Social_Media_School_Project.dir/flags.make
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o: ../Like.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o -c /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Like.cpp
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Like.cpp > CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.i
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Like.cpp -o CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.s
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.requires:
+
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.requires
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.provides: CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.provides.build
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.provides
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o
+
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o: CMakeFiles/Mini_Social_Media_School_Project.dir/flags.make
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o: ../Post.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o -c /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Post.cpp
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Post.cpp > CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.i
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Post.cpp -o CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.s
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.requires:
+
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.requires
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.provides: CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.provides.build
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.provides
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o
+
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o: CMakeFiles/Mini_Social_Media_School_Project.dir/flags.make
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o: ../Profile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o -c /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Profile.cpp
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Profile.cpp > CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.i
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Profile.cpp -o CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.s
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.requires:
+
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.requires
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.provides: CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.provides.build
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.provides
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o
+
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o: CMakeFiles/Mini_Social_Media_School_Project.dir/flags.make
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o: ../Group.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o -c /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Group.cpp
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.i"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Group.cpp > CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.i
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.s"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Group.cpp -o CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.s
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.requires:
+
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.requires
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.provides: CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.provides.build
+.PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.provides
+
+CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.provides.build: CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o
+
+
 # Object files for target Mini_Social_Media_School_Project
 Mini_Social_Media_School_Project_OBJECTS = \
-"CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o"
+"CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o" \
+"CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o" \
+"CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o" \
+"CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o" \
+"CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o" \
+"CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o" \
+"CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o"
 
 # External object files for target Mini_Social_Media_School_Project
 Mini_Social_Media_School_Project_EXTERNAL_OBJECTS =
 
 Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o
+Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o
+Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o
+Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o
+Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o
+Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o
+Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o
 Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/build.make
 Mini_Social_Media_School_Project.exe: CMakeFiles/Mini_Social_Media_School_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Mini_Social_Media_School_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Mini_Social_Media_School_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mini_Social_Media_School_Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +256,12 @@ CMakeFiles/Mini_Social_Media_School_Project.dir/build: Mini_Social_Media_School_
 .PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/build
 
 CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/main.cpp.o.requires
+CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o.requires
+CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o.requires
+CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o.requires
+CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o.requires
+CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o.requires
+CMakeFiles/Mini_Social_Media_School_Project.dir/requires: CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o.requires
 
 .PHONY : CMakeFiles/Mini_Social_Media_School_Project.dir/requires
 

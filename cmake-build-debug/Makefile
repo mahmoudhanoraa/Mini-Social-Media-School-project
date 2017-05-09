@@ -123,6 +123,168 @@ Mini_Social_Media_School_Project/fast:
 	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/build
 .PHONY : Mini_Social_Media_School_Project/fast
 
+Comment.o: Comment.cpp.o
+
+.PHONY : Comment.o
+
+# target to build an object file
+Comment.cpp.o:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.o
+.PHONY : Comment.cpp.o
+
+Comment.i: Comment.cpp.i
+
+.PHONY : Comment.i
+
+# target to preprocess a source file
+Comment.cpp.i:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.i
+.PHONY : Comment.cpp.i
+
+Comment.s: Comment.cpp.s
+
+.PHONY : Comment.s
+
+# target to generate assembly for a file
+Comment.cpp.s:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Comment.cpp.s
+.PHONY : Comment.cpp.s
+
+Group.o: Group.cpp.o
+
+.PHONY : Group.o
+
+# target to build an object file
+Group.cpp.o:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.o
+.PHONY : Group.cpp.o
+
+Group.i: Group.cpp.i
+
+.PHONY : Group.i
+
+# target to preprocess a source file
+Group.cpp.i:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.i
+.PHONY : Group.cpp.i
+
+Group.s: Group.cpp.s
+
+.PHONY : Group.s
+
+# target to generate assembly for a file
+Group.cpp.s:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Group.cpp.s
+.PHONY : Group.cpp.s
+
+Like.o: Like.cpp.o
+
+.PHONY : Like.o
+
+# target to build an object file
+Like.cpp.o:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.o
+.PHONY : Like.cpp.o
+
+Like.i: Like.cpp.i
+
+.PHONY : Like.i
+
+# target to preprocess a source file
+Like.cpp.i:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.i
+.PHONY : Like.cpp.i
+
+Like.s: Like.cpp.s
+
+.PHONY : Like.s
+
+# target to generate assembly for a file
+Like.cpp.s:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Like.cpp.s
+.PHONY : Like.cpp.s
+
+Post.o: Post.cpp.o
+
+.PHONY : Post.o
+
+# target to build an object file
+Post.cpp.o:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.o
+.PHONY : Post.cpp.o
+
+Post.i: Post.cpp.i
+
+.PHONY : Post.i
+
+# target to preprocess a source file
+Post.cpp.i:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.i
+.PHONY : Post.cpp.i
+
+Post.s: Post.cpp.s
+
+.PHONY : Post.s
+
+# target to generate assembly for a file
+Post.cpp.s:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Post.cpp.s
+.PHONY : Post.cpp.s
+
+Profile.o: Profile.cpp.o
+
+.PHONY : Profile.o
+
+# target to build an object file
+Profile.cpp.o:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.o
+.PHONY : Profile.cpp.o
+
+Profile.i: Profile.cpp.i
+
+.PHONY : Profile.i
+
+# target to preprocess a source file
+Profile.cpp.i:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.i
+.PHONY : Profile.cpp.i
+
+Profile.s: Profile.cpp.s
+
+.PHONY : Profile.s
+
+# target to generate assembly for a file
+Profile.cpp.s:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/Profile.cpp.s
+.PHONY : Profile.cpp.s
+
+User.o: User.cpp.o
+
+.PHONY : User.o
+
+# target to build an object file
+User.cpp.o:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.o
+.PHONY : User.cpp.o
+
+User.i: User.cpp.i
+
+.PHONY : User.i
+
+# target to preprocess a source file
+User.cpp.i:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.i
+.PHONY : User.cpp.i
+
+User.s: User.cpp.s
+
+.PHONY : User.s
+
+# target to generate assembly for a file
+User.cpp.s:
+	$(MAKE) -f CMakeFiles/Mini_Social_Media_School_Project.dir/build.make CMakeFiles/Mini_Social_Media_School_Project.dir/User.cpp.s
+.PHONY : User.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +321,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Mini_Social_Media_School_Project"
+	@echo "... Comment.o"
+	@echo "... Comment.i"
+	@echo "... Comment.s"
+	@echo "... Group.o"
+	@echo "... Group.i"
+	@echo "... Group.s"
+	@echo "... Like.o"
+	@echo "... Like.i"
+	@echo "... Like.s"
+	@echo "... Post.o"
+	@echo "... Post.i"
+	@echo "... Post.s"
+	@echo "... Profile.o"
+	@echo "... Profile.i"
+	@echo "... Profile.s"
+	@echo "... User.o"
+	@echo "... User.i"
+	@echo "... User.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

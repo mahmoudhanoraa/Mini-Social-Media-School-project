@@ -80,6 +80,42 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Comment.cpp">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Comment.h">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Group.cpp">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Group.h">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Like.cpp">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Like.h">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Post.cpp">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Post.h">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Profile.cpp">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/Profile.h">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/User.cpp">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/User.h">
+			<Option target="Mini_Social_Media_School_Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Mazen/Documents/GitHub/Mini-Social-Media-School-project/main.cpp">
 			<Option target="Mini_Social_Media_School_Project"/>
 		</Unit>
