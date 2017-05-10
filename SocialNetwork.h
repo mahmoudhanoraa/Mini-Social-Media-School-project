@@ -24,7 +24,7 @@ public:
     // Function to get the friends of the User by userID
     const vector<User> &getFriends(int);
 
-    // functions add user ID2 to the list of friends of ID1
+    // function add user ID2 to the list of friends of ID1
     void addUser(int, int);
 
     // function remove user ID2 from list of friends ID1
@@ -46,7 +46,7 @@ public:
     void getTimeline(int);
 
     // function to suggest friend by ID
-    const vector<User> suggestFrinds(int);
+    vector<User> suggestFrinds(int);
 };
 
 

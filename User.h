@@ -39,13 +39,13 @@ public:
 
     void setProfile(const Profile &profile);
 
-    const vector<User> &getFriends() const;
+    vector<User> &getFriends() const;
 
     void setFriends(const vector<User> &friends);
 
-    const vector<User> &getBlocked() const;
+    vector<User> &getBlocked();
 
-    void setBlocked(const vector<User> &blocked);
+    void setBlocked(vector<User> &blocked);
 
     int getUserId() const;
 

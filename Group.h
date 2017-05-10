@@ -7,6 +7,7 @@
 
 
 #include "User.h"
+#include "Date.h"
 #include <vector>
 #include <list>
 class Group {
@@ -15,7 +16,7 @@ class Group {
         Date date;
         vector<User> users;
         list<Post> posts;
-        vector<User> blkd;
+        vector<User> blocked;
         int groupId;
 
     public:
@@ -25,20 +26,20 @@ class Group {
 
     void setPosts(const list<Post> &posts);
 
-    void setBlkd(const vector<User> &blkd);
+    void setBlocked(vector<User> &blocked);
 
     const vector<User> &getAdmins() const;
 
     const Date &getDate() const;
 
-    const vector<User> &getUsers() const;
+    vector<User> &getUsers();
 
     const list<Post> &getPosts() const;
 
-    const vector<User> &getBlkd() const;
 
     const int &getGroupId() const;
 
+    vector<User> &getBlocked();
 };
 
 

@@ -12,7 +12,7 @@ const Date &Group::getDate() const {
     return date;
 }
 
-const vector<User> &Group::getUsers() const {
+vector<User> &Group::getUsers() {
     return users;
 }
 
@@ -20,9 +20,6 @@ const list<Post> &Group::getPosts() const {
     return posts;
 }
 
-const vector<User> &Group::getBlkd() const {
-    return blkd;
-}
 
 void Group::setAdmins(const vector<User> &admins) {
     Group::admins = admins;
@@ -36,10 +33,15 @@ void Group::setPosts(const list<Post> &posts) {
     Group::posts = posts;
 }
 
-void Group::setBlkd(const vector<User> &blkd) {
-    Group::blkd = blkd;
-}
 
 const int &Group::getGroupId() const {
     return groupId;
+}
+
+void Group::setBlocked(vector<User> &blocked) {
+
+}
+
+vector<User> &Group::getBlocked() {
+    return <#initializer#>;
 }

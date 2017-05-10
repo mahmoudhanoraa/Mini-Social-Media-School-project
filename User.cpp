@@ -45,7 +45,7 @@ void User::setProfile(const Profile &profile) {
     User::profile = profile;
 }
 
-const vector<User> &User::getFriends() const {
+vector<User> &User::getFriends() const {
     return friends;
 }
 
@@ -53,11 +53,11 @@ void User::setFriends(const vector<User> &friends) {
     User::friends = friends;
 }
 
-const vector<User> &User::getBlocked() const {
+vector<User> &User::getBlocked(){
     return blocked;
 }
 
-void User::setBlocked(const vector<User> &blocked) {
+void User::setBlocked(vector<User> &blocked) {
     User::blocked = blocked;
 }
 
