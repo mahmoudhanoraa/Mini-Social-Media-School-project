@@ -10,21 +10,25 @@
 #include "Post.h"
 #include <list>
 using namespace std;
+class User;
+class Post;
 
 class Profile {
 private:
-    User user;
-    list<Post> posts;
+    User *user;
+    list<Post*> posts;
     string status;
     string profilePic;
 public:
-    Profile(const list<Post> &posts, const string &status, const string &profilePic);
+    Profile(User *user, const string &status, const string &profilePic);
 
+    User *getUser() const;
     Profile();
+    void setUser(User *user);
 
-    const list<Post> &getPosts() const;
+    const list<Post *> &getPosts() const;
 
-    void setPosts(const list<Post> &posts);
+    void setPosts(const list<Post *> &posts);
 
     const string &getStatus() const;
 
@@ -34,6 +38,7 @@ public:
 
     void setProfilePic(const string &profilePic);
 
+    virtual ~Profile();
 };
 
 

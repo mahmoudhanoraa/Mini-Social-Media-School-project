@@ -10,19 +10,21 @@
 #include "User.h"
 #include "Group.h"
 using namespace std;
+class User;
+class Group;
 
 class SocialNetwork {
 private:
-    vector<User> users;
-    vector<Group> groups;
+    vector<User*> users;
+    vector<Group*> groups;
 
 public:
-    const vector<User> &getUsers() const;
+    vector<User*> &getUsers();
 
-    const vector<Group> &getGroups() const;
+    vector<Group*> &getGroups();
 
     // Function to get the friends of the User by userID
-    const vector<User> &getFriends(int);
+    vector<User*> &getFriends(int);
 
     // function add user ID2 to the list of friends of ID1
     void addUser(int, int);
@@ -46,7 +48,7 @@ public:
     void getTimeline(int);
 
     // function to suggest friend by ID
-    vector<User> suggestFrinds(int);
+    vector<User*> suggestFrinds(int);
 };
 
 

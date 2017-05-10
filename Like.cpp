@@ -4,24 +4,27 @@
 
 #include "Like.h"
 
-Like::Like(const User &owner, const Date &date) : owner(owner){
-    // todo create object from time.date
-}
 
-const User &Like::getOwner() const {
+Like::Like(User *owner) : owner(owner) {}
+
+User *Like::getOwner() const {
     return owner;
 }
 
-void Like::setOwner(const User &owner) {
+void Like::setOwner(User *owner) {
     Like::owner = owner;
 }
 
-const Date &Like::getDate() const {
+Date *Like::getDate() const {
     return date;
 }
 
-void Like::setDate(const Date &date) {
+void Like::setDate(Date *date) {
     Like::date = date;
 }
 
-Like::Like() {}
+Like::~Like() {
+    delete owner;
+    delete date;
+
+}

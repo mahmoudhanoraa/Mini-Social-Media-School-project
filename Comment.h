@@ -10,30 +10,28 @@
 #include "Date.h"
 
 using namespace std;
-
+class User;
+class Date;
 class Comment {
 private:
     string content;
-    User owner;
-    Date date;
+    User *owner;
+    Date *date;
 
 public:
-    Comment(const string &content, const User &owner);
-
-    Comment();
+    Comment(const string &content, User *owner);
 
     const string &getContent() const;
 
     void setContent(const string &content);
 
-    const User &getOwner() const;
+    User *getOwner() const;
 
-    void setOwner(const User &owner);
+    void setOwner(User *owner);
 
-    const Date &getDate() const;
+    Date *getDate() const;
 
-    void setDate(const Date &date);
-
+    void setDate(Date *date);
 
 };
 

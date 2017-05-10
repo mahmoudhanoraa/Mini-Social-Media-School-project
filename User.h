@@ -6,48 +6,49 @@
 #define MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_USER_H
 #include <string>
 #include "Profile.h"
+#include <vector>
 
 using namespace std;
-
+class Profile;
 class User {
 private:
     string userName;
     string password;
     string email;
-    Profile profile;
-    vector<User> friends;
-    vector<User> blocked;
+    Profile *profile;
+    vector<User*> friends;
+    vector<User*> blocked;
     int userId;
-    static int userIdCount;
 
 public:
-    User(const string &userName, const string &password, const string &email);
+    User(string &userName,string &password, string &email, int);
 
-    const string &getUserName() const;
 
-    void setUserName(const string &userName);
+    string &getUserName();
 
-    const string &getPassword() const;
+    void setUserName(string &userName);
 
-    void setPassword(const string &password);
+    string &getPassword();
 
-    const string &getEmail() const;
+    void setPassword(string &password);
 
-    void setEmail(const string &email);
+    string &getEmail();
 
-    const Profile &getProfile() const;
+    void setEmail(string &email);
 
-    void setProfile(const Profile &profile);
+    Profile* getProfile();
 
-    vector<User> &getFriends() const;
+    void setProfile(Profile *profile);
 
-    void setFriends(const vector<User> &friends);
+    vector<User*> &getFriends();
 
-    vector<User> &getBlocked();
+    void setFriends(vector<User*> &friends);
 
-    void setBlocked(vector<User> &blocked);
+    vector<User*> &getBlocked();
 
-    int getUserId() const;
+    void setBlocked(vector<User*> &blocked);
+
+    int getUserId();
 
     void setUserId(int userId);
 

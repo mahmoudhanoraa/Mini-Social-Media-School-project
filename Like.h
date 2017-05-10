@@ -7,25 +7,30 @@
 
 
 #include "User.h"
+class User;
+class Date;
 
 class Like {
+
 private:
-    User owner;
-    Date date;
+    User *owner;
+    Date *date;
 
 public:
-    Like(const User &owner);
+    Like(User *owner);
 
-    Like();
+    User *getOwner() const;
 
-    const User &getOwner() const;
+    void setOwner(User *owner);
 
-    void setOwner(const User &owner);
+    Date *getDate() const;
 
-    const Date &getDate() const;
+    void setDate(Date *date);
 
-    void setDate(const Date &date);
+     ~Like();
 };
+
+
 
 
 #endif //MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_LIKE_H

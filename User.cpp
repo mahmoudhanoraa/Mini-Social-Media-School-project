@@ -5,66 +5,65 @@
 #include "User.h"
 
 
-User::User(const string &userName, const string &password, const string &email) : userName(userName),
-                                                                                  password(password), email(email) {
-    profile = Profile();
-    userId = ++userIdCount;
+User::User(string &userName, string &password, string &email, int id) : userName(userName),
+                                                                                  password(password), email(email), userId(id) {
+    profile = new Profile();
 }
 
 
 
-const string &User::getUserName() const {
+string &User::getUserName() {
     return userName;
 }
 
-void User::setUserName(const string &userName) {
+void User::setUserName(string &userName) {
     User::userName = userName;
 }
 
-const string &User::getPassword() const {
+string &User::getPassword(){
     return password;
 }
 
-void User::setPassword(const string &password) {
+void User::setPassword(string &password) {
     User::password = password;
 }
 
-const string &User::getEmail() const {
+string &User::getEmail(){
     return email;
 }
 
-void User::setEmail(const string &email) {
+void User::setEmail(string &email) {
     User::email = email;
 }
 
-const Profile &User::getProfile() const {
+Profile *User::getProfile(){
     return profile;
 }
 
-void User::setProfile(const Profile &profile) {
+void User::setProfile(Profile *profile) {
     User::profile = profile;
 }
 
-vector<User> &User::getFriends() const {
+vector<User*> &User::getFriends(){
     return friends;
 }
 
-void User::setFriends(const vector<User> &friends) {
-    User::friends = friends;
-}
-
-vector<User> &User::getBlocked(){
+vector<User*> &User::getBlocked(){
     return blocked;
 }
 
-void User::setBlocked(vector<User> &blocked) {
+void User::setBlocked(vector<User*> &blocked) {
     User::blocked = blocked;
 }
 
-int User::getUserId() const {
+int User::getUserId(){
     return userId;
 }
 
 void User::setUserId(int userId) {
     User::userId = userId;
+}
+
+void User::setFriends(vector<User *> &friends) {
+
 }

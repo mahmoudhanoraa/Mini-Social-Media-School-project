@@ -4,44 +4,58 @@
 
 #include "Group.h"
 
-const vector<User> &Group::getAdmins() const {
+Group::Group(int id) {
+    groupId = id;
+}
+
+vector<User *> &Group::getAdmins(){
     return admins;
 }
 
-const Date &Group::getDate() const {
-    return date;
-}
-
-vector<User> &Group::getUsers() {
-    return users;
-}
-
-const list<Post> &Group::getPosts() const {
-    return posts;
-}
-
-
-void Group::setAdmins(const vector<User> &admins) {
+void Group::setAdmins(vector<User *> &admins) {
     Group::admins = admins;
 }
 
-void Group::setUsers(const vector<User> &users) {
+Date *Group::getDate(){
+    return date;
+}
+
+void Group::setDate(Date *date) {
+    Group::date = date;
+}
+
+vector<User *> &Group::getUsers(){
+    return users;
+}
+
+void Group::setUsers(vector<User *> &users) {
     Group::users = users;
 }
 
-void Group::setPosts(const list<Post> &posts) {
+list<Post *> &Group::getPosts(){
+    return posts;
+}
+
+void Group::setPosts(list<Post *> &posts) {
     Group::posts = posts;
 }
 
+vector<User *> &Group::getBlocked(){
+    return blocked;
+}
 
-const int &Group::getGroupId() const {
+void Group::setBlocked(vector<User *> &blocked) {
+    Group::blocked = blocked;
+}
+
+int Group::getGroupId(){
     return groupId;
 }
 
-void Group::setBlocked(vector<User> &blocked) {
-
+void Group::setGroupId(int groupId) {
+    Group::groupId = groupId;
 }
 
-vector<User> &Group::getBlocked() {
-    return <#initializer#>;
+Group::~Group() {
+    delete date;
 }

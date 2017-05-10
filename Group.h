@@ -10,36 +10,47 @@
 #include "Date.h"
 #include <vector>
 #include <list>
+
+class Data;
+class User;
+class Post;
 class Group {
     private:
-        vector<User> admins;
-        Date date;
-        vector<User> users;
-        list<Post> posts;
-        vector<User> blocked;
+        vector<User*> admins;
+        Date *date;
+        vector<User*> users;
+        list<Post*> posts;
+        vector<User*> blocked;
         int groupId;
+public:
+    Group(int);
 
-    public:
-    void setAdmins(const vector<User> &admins);
+    vector<User *> &getAdmins();
 
-    void setUsers(const vector<User> &users);
+    void setAdmins(vector<User *> &admins);
 
-    void setPosts(const list<Post> &posts);
+    Date *getDate();
 
-    void setBlocked(vector<User> &blocked);
+    void setDate(Date *date);
 
-    const vector<User> &getAdmins() const;
+    vector<User *> &getUsers();
 
-    const Date &getDate() const;
+    void setUsers(vector<User *> &users);
 
-    vector<User> &getUsers();
+    list<Post *> &getPosts();
 
-    const list<Post> &getPosts() const;
+    void setPosts(list<Post *> &posts);
 
+    vector<User *> &getBlocked();
 
-    const int &getGroupId() const;
+    void setBlocked(vector<User *> &blocked);
 
-    vector<User> &getBlocked();
+    int getGroupId();
+
+    void setGroupId(int groupId);
+
+    virtual ~Group();
+
 };
 
 

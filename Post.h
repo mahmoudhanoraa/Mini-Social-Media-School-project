@@ -12,39 +12,40 @@
 #include "Comment.h"
 
 using namespace std;
-
+class Comment;
+class Like;
 class Post {
 private:
-    Date date;
-    User owner;
-    vector<Like> likes;
-    vector<Comment> comments;
+    Date *date;
+    User *owner;
+    vector<Like*> likes;
+    vector<Comment*> comments;
     string content;
 
 public:
-    Post(const User &owner, const vector<Like> &likes, const vector<Comment> &comments,
-         const string &content);
+    Post(User *owner, const string &content);
 
-    const Date &getDate() const;
+    Date *getDate() const;
 
-    void setDate(const Date &date);
+    void setDate(Date *date);
 
-    const User &getOwner() const;
+    User *getOwner() const;
 
-    void setOwner(const User &owner);
+    void setOwner(User *owner);
 
-    const vector<Like> &getLikes() const;
+    const vector<Like *> &getLikes() const;
 
-    void setLikes(const vector<Like> &likes);
+    void setLikes(const vector<Like *> &likes);
 
-    const vector<Comment> &getComments() const;
+    const vector<Comment *> &getComments() const;
 
-    void setComments(const vector<Comment> &comments);
+    void setComments(const vector<Comment *> &comments);
 
     const string &getContent() const;
 
     void setContent(const string &content);
 
+    ~Post();
 
 };
 
