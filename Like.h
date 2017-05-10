@@ -1,7 +1,3 @@
-//
-// Created by mahmoud on 5/9/2017.
-//
-
 #ifndef MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_LIKE_H
 #define MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_LIKE_H
 

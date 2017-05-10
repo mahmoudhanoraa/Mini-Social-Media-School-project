@@ -1,7 +1,3 @@
-//
-// Created by mahmoud on 5/9/2017.
-//
-
 #include "SocialNetwork.h"
 #include <vector>
 #include <algorithm>
@@ -17,14 +13,21 @@ vector<Group*> &SocialNetwork::getGroups(){
     return groups;
 }
 
-void SocialNetwork::addUser(int ID1, int ID2) {
+void SocialNetwork::unfriend(int ID1, int ID2) {
     User* ID1_user = this->users[ID1];
-    ID1_user->getFriends().push_back(this->users[ID2]);
-}
-
-void SocialNetwork::removeFriend(int ID1, int ID2) {
-    User* ID1_user = this->users[ID1];
-    ID1_user->getFriends().erase(this->users.begin() + ID2);
+    User* ID2_user = this->users[ID2];
+    for (int i = 0; i < ID1_user->getFriends().size(); ++i) {
+        if(ID1_user->getFriends()[i]->getUserId() == ID2) {
+            ID1_user->getFriends().erase(this->users.begin() + i);
+            break;
+        }
+    }
+    for (int i = 0; i < ID2_user->getFriends().size(); ++i) {
+        if(ID2_user->getFriends()[i]->getUserId() == ID1) {
+            ID2_user->getFriends().erase(this->users.begin() + i);
+            break;
+        }
+    }
 }
 
 void SocialNetwork::block(int ID1, int ID2) {
@@ -102,4 +105,13 @@ void SocialNetwork::getTimeline(int ID1) {
     for (int i = 0; i < ID1_user_timeline.size(); ++i) {
         cout << ID1_user_timeline[i]->getContent() << endl;
     }
+}
+
+SocialNetwork::SocialNetwork() {}
+
+void SocialNetwork::addFriend(int ID1, int ID2) {
+    User* ID1_user = this->users[ID1];
+    ID1_user->getFriends().push_back(this->users[ID2]);
+    User* ID2_user = this->users[ID2];
+    ID2_user->getFriends().push_back(this->users[ID1]);
 }

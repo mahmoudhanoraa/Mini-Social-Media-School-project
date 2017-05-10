@@ -1,7 +1,3 @@
-//
-// Created by mahmoud on 5/9/2017.
-//
-
 #ifndef MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_SOCIALNETWORK_H
 #define MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_SOCIALNETWORK_H
 
@@ -19,6 +15,8 @@ private:
     vector<Group*> groups;
 
 public:
+    SocialNetwork();
+
     vector<User*> &getUsers();
 
     vector<Group*> &getGroups();
@@ -26,11 +24,11 @@ public:
     // Function to get the friends of the User by userID
     vector<User*> &getFriends(int);
 
-    // function add user ID2 to the list of friends of ID1
-    void addUser(int, int);
+    // function add friend the to each other
+    void addFriend(int, int);
 
-    // function remove user ID2 from list of friends ID1
-    void removeFriend(int, int);
+    // function unfriend them
+    void unfriend(int, int);
 
     // function block user ID2 from being a friend to ID1
     void block(int, int);
@@ -49,6 +47,7 @@ public:
 
     // function to suggest friend by ID
     vector<User*> suggestFrinds(int);
+
 };
 
 

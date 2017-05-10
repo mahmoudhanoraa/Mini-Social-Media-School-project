@@ -1,7 +1,3 @@
-//
-// Created by Mazen on 09-May-17.
-//
-
 #include "Group.h"
 
 Group::Group(int id) {

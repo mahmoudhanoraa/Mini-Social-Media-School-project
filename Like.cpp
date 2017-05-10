@@ -1,7 +1,3 @@
-//
-// Created by mahmoud on 5/9/2017.
-//
-
 #include "Like.h"
 
 

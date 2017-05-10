@@ -1,7 +1,3 @@
-//
-// Created by mahmoud on 5/9/2017.
-//
-
 #include "Post.h"
 
 Post::Post(User *owner, const string &content) : owner(owner), content(content) {
