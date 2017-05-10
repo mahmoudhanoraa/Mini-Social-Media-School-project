@@ -5,7 +5,11 @@
 #include "Like.h"
 
 
-Like::Like(User *owner) : owner(owner) {}
+Like::Like(User *owner) : owner(owner) {
+    time_t now = time(0);
+    string dt = ctime(&now);
+    this->date = new Date(dt);
+}
 
 User *Like::getOwner() const {
     return owner;

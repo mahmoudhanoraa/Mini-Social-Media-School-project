@@ -4,7 +4,11 @@
 
 #include "Post.h"
 
-Post::Post(User *owner, const string &content) : owner(owner), content(content) {}
+Post::Post(User *owner, const string &content) : owner(owner), content(content) {
+    time_t now = time(0);
+    string dt = ctime(&now);
+    this->date = new Date(dt);
+}
 
 Date *Post::getDate() const {
     return date;

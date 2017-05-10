@@ -3,9 +3,16 @@
 //
 
 #include "Comment.h"
+#include <ctime>
+
+using namespace std;
 
 
-Comment::Comment(const string &content, User *owner) : content(content), owner(owner) {}
+Comment::Comment(const string &content, User *owner) : content(content), owner(owner) {
+    time_t now = time(0);
+    string dt = ctime(&now);
+    this->date = new Date(dt);
+}
 
 const string &Comment::getContent() const {
     return content;
