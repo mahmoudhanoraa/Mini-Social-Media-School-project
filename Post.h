@@ -45,6 +45,8 @@ public:
 
     void setContent(const string &content);
 
+    string toString();
+
     ~Post();
 
 };

@@ -52,6 +52,8 @@ public:
 
     void setUserId(int userId);
 
+    string toString();
+
 };
 
 

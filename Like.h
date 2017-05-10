@@ -7,6 +7,10 @@
 
 
 #include "User.h"
+#include <string>
+
+using namespace std;
+
 class User;
 class Date;
 
@@ -26,6 +30,8 @@ public:
     Date *getDate() const;
 
     void setDate(Date *date);
+
+    string toString();
 
      ~Like();
 };

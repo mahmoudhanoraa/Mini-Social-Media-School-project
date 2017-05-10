@@ -112,3 +112,11 @@ Date::Date(string &date) {
     this->minutes = stoi(minutes);
     this->year = stoi(year);
 }
+
+string Date::toString() {
+    string s = "Date : \n";
+    s.append(to_string(this->getDay()) + ' ' );
+    s.append(to_string(this->getMonth()) + ' ');
+    s.append(to_string(this->getYear()) + "\n");
+    return s;
+}

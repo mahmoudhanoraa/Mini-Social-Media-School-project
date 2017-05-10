@@ -32,3 +32,9 @@ Like::~Like() {
     delete date;
 
 }
+
+string Like::toString() {
+    string s = "Like \n" + this->date->toString() + " \n";
+    s.append(this->owner->toString());
+
+}

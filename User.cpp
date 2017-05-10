@@ -67,3 +67,14 @@ void User::setUserId(int userId) {
 void User::setFriends(vector<User *> &friends) {
 
 }
+
+string User::toString() {
+    string s = "User id : " + to_string(this->userId);
+    s.append("User name : " + this->userName + "\n");
+    s.append("User Password : " + this->password + "\n");
+    s.append("User Email : " + this->email + "\n");
+    s.append(this->profile->toString());
+    s.append("Number of Friends : " + to_string(this->friends.size()) + "\n");
+    s.append("Number of Blocked : " + to_string(this->blocked.size()) + "\n");
+    return s;
+}

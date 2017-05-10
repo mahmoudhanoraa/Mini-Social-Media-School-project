@@ -15,9 +15,10 @@ int main() {
     User  *user_1 = new User(user_1_name, user_1_pass, user_1_email, 1);
 
 
-    Comment *comment = new Comment("Hi, this is my first comment on your social media", user_1);
-    cout << "Comment 1 Date" << endl;
-    cout << comment->getDate()->getDay() << ' ' << comment->getDate()->getMonth() << ' ' << comment->getDate()->getYear() << endl;
+    Comment *comment_1 = new Comment("Hi, this is my first comment on your social media", user_1);
+    cout << "Comment 1" << endl;
+    cout << comment_1->getDate()->toString();
+
 
     return 0;
 }

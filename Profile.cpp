@@ -47,3 +47,11 @@ Profile::Profile() {
 Profile::~Profile() {
     delete(user);
 }
+
+string Profile::toString() {
+    string s = "Profile \n" + this->user->toString() + "\n";
+    s.append("Number of Posts : "+to_string(this->posts.size()) + "\n");
+    s.append("Status : " + this->status);
+    s.append("Profile Pic" + this->profilePic);
+    return s;
+}

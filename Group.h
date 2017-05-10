@@ -22,8 +22,14 @@ class Group {
         list<Post*> posts;
         vector<User*> blocked;
         int groupId;
+        string groupName;
 public:
+    Group(int, string&);
     Group(int);
+
+    const string &getGroupName() const;
+
+    void setGroupName(const string &groupName);
 
     vector<User *> &getAdmins();
 
@@ -48,8 +54,9 @@ public:
     int getGroupId();
 
     void setGroupId(int groupId);
+    string toString();
 
-    virtual ~Group();
+    ~Group();
 
 };
 

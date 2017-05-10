@@ -43,6 +43,9 @@ public:
     int getYear() const;
 
     void setYear(int year);
+
+    string toString();
+
 };
 
 

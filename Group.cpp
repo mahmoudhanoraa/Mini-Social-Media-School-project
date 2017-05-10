@@ -59,3 +59,25 @@ void Group::setGroupId(int groupId) {
 Group::~Group() {
     delete date;
 }
+
+string Group::toString() {
+    string s = "Group \n" + this->groupName + " \n";
+    s.append(this->date->toString());
+    s.append("Number Of Admins : " + to_string(this->admins.size()) +"\n");
+    s.append("Number of Members : " + to_string(this->users.size()) +"\n");
+    s.append("Number of Posts : " + to_string(this->posts.size()) + "\n");
+    s.append("Number of Blocked : " + to_string(this->blocked.size()) + "\n");
+    return s;
+}
+
+Group::Group(int, string &) {
+
+}
+
+const string &Group::getGroupName() const {
+    return groupName;
+}
+
+void Group::setGroupName(const string &groupName) {
+    Group::groupName = groupName;
+}

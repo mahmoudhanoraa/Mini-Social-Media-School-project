@@ -38,7 +38,9 @@ public:
 
     void setProfilePic(const string &profilePic);
 
-    virtual ~Profile();
+    string toString();
+
+    ~Profile();
 };
 
 

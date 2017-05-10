@@ -37,3 +37,10 @@ Date *Comment::getDate() const {
 void Comment::setDate(Date *date) {
     Comment::date = date;
 }
+
+string Comment::toString() {
+    string s = "Comment \n" + this->getDate()->toString();
+    s.append(this->owner->toString());
+    s.append(this->content);
+    return s;
+}

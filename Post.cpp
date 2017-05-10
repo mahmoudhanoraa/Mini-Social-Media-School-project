@@ -55,3 +55,12 @@ Post::~Post() {
     delete(date);
 }
 
+string Post::toString() {
+    string s = "Post \n"+this->date->toString() + "\n";
+    s.append(this->owner->toString() + "\n");
+    s.append("Number of Comments : " + to_string(this->comments.size()) + "\n");
+    s.append("Number of Likes : " + to_string(this->likes.size()) + "\n");
+    s.append(this->content+"\n");
+    return s;
+}
+
