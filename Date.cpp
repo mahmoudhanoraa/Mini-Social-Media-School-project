@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Date.h"
 
 Date::Date() {}
@@ -109,10 +110,7 @@ Date::Date(string &date) {
     this->year = stoi(year);
 }
 
-string Date::toString() {
-    string s = "Date : \n";
-    s.append(to_string(this->getDay()) + ' ' );
-    s.append(to_string(this->getMonth()) + ' ');
-    s.append(to_string(this->getYear()) + "\n");
-    return s;
+void Date::toString() {
+    cout << "Date : " << endl;
+    cout << this->getDay() << " / " <<this->getMonth()<< " / " << this->getYear() << endl;
 }

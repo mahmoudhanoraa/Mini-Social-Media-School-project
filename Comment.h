@@ -29,7 +29,7 @@ public:
 
     void setDate(Date *date);
 
-    string toString();
+    void toString();
 
 };
 

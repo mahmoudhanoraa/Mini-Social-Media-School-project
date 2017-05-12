@@ -8,14 +8,17 @@
 #include "Comment.h"
 
 using namespace std;
+
 class Comment;
+
 class Like;
+
 class Post {
 private:
     Date *date;
     User *owner;
-    vector<Like*> likes;
-    vector<Comment*> comments;
+    vector<Like *> likes;
+    vector<Comment *> comments;
     string content;
 
 public:
@@ -41,7 +44,7 @@ public:
 
     void setContent(const string &content);
 
-    string toString();
+    void toString();
 
     ~Post();
 

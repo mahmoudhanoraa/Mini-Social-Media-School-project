@@ -8,6 +8,7 @@
 using namespace std;
 
 class User;
+
 class Date;
 
 class Like {
@@ -27,12 +28,10 @@ public:
 
     void setDate(Date *date);
 
-    string toString();
+    void toString();
 
-     ~Like();
+    ~Like();
 };
-
-
 
 
 #endif //MINI_SOCIAL_MEDIA_SCHOOL_PROJECT_LIKE_H

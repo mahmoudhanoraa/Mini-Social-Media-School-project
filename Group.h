@@ -54,7 +54,7 @@ public:
     int getGroupId();
 
     void setGroupId(int groupId);
-    string toString();
+    void toString();
 
     ~Group();
 

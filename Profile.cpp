@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Profile.h"
 
 
@@ -37,17 +38,18 @@ void Profile::setProfilePic(const string &profilePic) {
 }
 
 Profile::Profile() {
-
+    this->profilePic = "";
+    this->status = "";
 }
 
 Profile::~Profile() {
-    delete(user);
+    delete (user);
 }
 
-string Profile::toString() {
-    string s = "Profile \n" + this->user->toString() + "\n";
-    s.append("Number of Posts : "+to_string(this->posts.size()) + "\n");
-    s.append("Status : " + this->status);
-    s.append("Profile Pic" + this->profilePic);
-    return s;
+void Profile::toString() {
+    cout << "Profile " << endl;
+    this->user->toString();
+    cout << "Number of Posts : " << ' ' << this->posts.size() << endl;
+    cout << "Status : " << this->status << endl;
+    cout << "Profile Pic " << this->profilePic << endl;
 }

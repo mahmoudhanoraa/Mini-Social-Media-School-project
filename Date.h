@@ -40,7 +40,7 @@ public:
 
     void setYear(int year);
 
-    string toString();
+    void toString();
 
 };
 

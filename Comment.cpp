@@ -1,5 +1,6 @@
 #include "Comment.h"
 #include <ctime>
+#include <iostream>
 
 using namespace std;
 
@@ -34,9 +35,9 @@ void Comment::setDate(Date *date) {
     Comment::date = date;
 }
 
-string Comment::toString() {
-    string s = "Comment \n" + this->getDate()->toString();
-    s.append(this->owner->toString());
-    s.append(this->content);
-    return s;
+void Comment::toString() {
+    cout << "Comment " << ' ' << endl;
+    this->getDate()->toString();
+    this->owner->toString();
+    cout << this->content << endl;
 }

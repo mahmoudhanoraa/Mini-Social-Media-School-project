@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Like.h"
 
 
@@ -29,8 +30,8 @@ Like::~Like() {
 
 }
 
-string Like::toString() {
-    string s = "Like \n" + this->date->toString() + " \n";
-    s.append(this->owner->toString());
-
+void Like::toString() {
+    cout << "Like " << endl;
+    this->date->toString();
+    this->owner->toString();
 }

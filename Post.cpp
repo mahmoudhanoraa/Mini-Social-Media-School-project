@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Post.h"
 
 Post::Post(User *owner, const string &content) : owner(owner), content(content) {
@@ -47,16 +48,16 @@ void Post::setContent(const string &content) {
 }
 
 Post::~Post() {
-    delete(owner);
-    delete(date);
+    delete (owner);
+    delete (date);
 }
 
-string Post::toString() {
-    string s = "Post \n"+this->date->toString() + "\n";
-    s.append(this->owner->toString() + "\n");
-    s.append("Number of Comments : " + to_string(this->comments.size()) + "\n");
-    s.append("Number of Likes : " + to_string(this->likes.size()) + "\n");
-    s.append(this->content+"\n");
-    return s;
+void Post::toString() {
+    cout << "Post " << endl;
+    this->date->toString();
+    this->owner->toString();
+    cout << "Number of Comments : " << ' ' << this->comments.size() << endl;
+    cout << "Number of Likes : " << ' ' << this->likes.size() << endl;
+    cout << this->content << endl;
 }
 
