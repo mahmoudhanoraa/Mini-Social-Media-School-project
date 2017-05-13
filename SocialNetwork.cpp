@@ -49,12 +49,13 @@ void SocialNetwork::deleteGroup(int IDg) {
     this->groups.erase(this->groups.begin() + IDg);
 }
 
-vector<User*> SocialNetwork::suggestFrinds(int ID1) {
+vector<User*> SocialNetwork::suggestFriends(int ID1) {
     User* ID1_user = this->users[ID1];
     vector<User*> suggested_friends;
     for (int i = 0; i < ID1_user->getFriends().size(); ++i) {
         for (int j = 0; j < ID1_user->getFriends()[i]->getFriends().size(); ++j) {
-            suggested_friends.push_back(ID1_user->getFriends()[i]->getFriends()[j]);
+            if(ID1_user->getFriends()[i]->getFriends()[j] != ID1_user)
+                suggested_friends.push_back(ID1_user->getFriends()[i]->getFriends()[j]);
         }
     }
     return suggested_friends;
@@ -69,41 +70,45 @@ void SocialNetwork::getTimeline(int ID1) {
     vector<Post*> ID1_user_timeline;
     User* ID1_user = this->users[ID1];
     Profile* ID1_user_profile = ID1_user->getProfile();
-    list<Post*>::const_iterator it;
-    for (it = ID1_user_profile->getPosts().begin(); it != ID1_user_profile->getPosts().end(); ++it) {
-        ID1_user_timeline.push_back(*it);
-    }
-//    for (int i = 0; i < ID1_user.getFriends().size(); ++i) {
-//        list<Post>::const_iterator it1;
-//        for (it = ID1_user.getFriends()[i].getProfile().getPosts().begin();
-//             it1 !=  ID1_user.getFriends()[i].getProfile().getPosts().end(); ++it1) {
-//            ID1_user_timeline.push_back(*it1);
-//        }
-//    }
-    struct date_compare
-    {
-        inline bool operator() (const Post* post_1, const Post* post_2)
-        {
-            int date_1 = post_1->getDate()->getYear()*10000+
-                        post_1->getDate()->getMonth()*1000+
-                        post_1->getDate()->getDay()*100+
-                        post_1->getDate()->getHour()*10+
-                        post_1->getDate()->getMinutes();
-
-            int date_2 = post_2->getDate()->getYear()*10000+
-                        post_2->getDate()->getMonth()*1000+
-                        post_2->getDate()->getDay()*100+
-                        post_2->getDate()->getHour()*10+
-                        post_2->getDate()->getMinutes();
-
-            return date_1 > date_2;
-
+    if(!ID1_user_profile->getPosts().empty()) {
+        for (int i = 0; i < ID1_user_profile->getPosts().size(); ++i) {
+            ID1_user_timeline.push_back(ID1_user_profile->getPosts()[i]);
+//            try {
+//                ID1_user_profile->getPosts()[i]->toString();
+//                cout << "------------------------- End Post -----------------------" << endl;
+//            }
+//            catch (...){
+//
+//            }
         }
-    };
-    sort(ID1_user_timeline.begin(), ID1_user_timeline.end(), date_compare());
 
-    for (int i = 0; i < ID1_user_timeline.size(); ++i) {
-        cout << ID1_user_timeline[i]->getContent() << endl;
+        struct date_compare {
+            inline bool operator()(Post *post_1, Post *post_2) {
+                if (post_1 == NULL || post_1->getDate() == NULL)
+                    return false;
+                if(post_2 == NULL || post_1->getDate() == NULL )
+                    return true;
+                int date_1 = post_1->getDate()->getYear() * 10000 +
+                             post_1->getDate()->getMonth() * 1000 +
+                             post_1->getDate()->getDay() * 100 +
+                             post_1->getDate()->getHour() * 10 +
+                             post_1->getDate()->getMinutes();
+
+                int date_2 = post_2->getDate()->getYear() * 10000 +
+                             post_2->getDate()->getMonth() * 1000 +
+                             post_2->getDate()->getDay() * 100 +
+                             post_2->getDate()->getHour() * 10 +
+                             post_2->getDate()->getMinutes();
+
+                return date_1 > date_2;
+
+            }
+        };
+        sort(ID1_user_timeline.begin(), ID1_user_timeline.end(), date_compare());
+
+        for (int i = 0; i < ID1_user_timeline.size(); ++i) {
+            cout << ID1_user_timeline[i]->getContent() << endl;
+        }
     }
 }
 
@@ -114,4 +119,20 @@ void SocialNetwork::addFriend(int ID1, int ID2) {
     ID1_user->getFriends().push_back(this->users[ID2]);
     User* ID2_user = this->users[ID2];
     ID2_user->getFriends().push_back(this->users[ID1]);
+}
+
+void SocialNetwork::publishPost(Post *post, User *owner) {
+    owner->getProfile()->getPosts().push_back(post);
+    for (int i = 0; i < owner->getFriends().size(); ++i) {
+        User *friend_user = owner->getFriends()[i];
+        friend_user->getProfile()->getPosts().push_back(post);
+    }
+}
+
+void SocialNetwork::publishPost(Post *post, Group *toPublishOn) {
+    toPublishOn->getPosts().push_back(post);
+    for (int i = 0; i < toPublishOn->getUsers().size(); ++i) {
+        User* memberUser = toPublishOn->getUsers()[i];
+        memberUser->getProfile()->getPosts().push_back(post);
+    }
 }

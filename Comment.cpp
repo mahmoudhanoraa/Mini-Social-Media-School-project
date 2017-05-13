@@ -36,8 +36,8 @@ void Comment::setDate(Date *date) {
 }
 
 void Comment::toString() {
-    cout << "Comment " << ' ' << endl;
+    std::cout << "Comment " << ' ' << std::endl;
     this->getDate()->toString();
     this->owner->toString();
-    cout << this->content << endl;
+    std::cout << this->content << std::endl;
 }

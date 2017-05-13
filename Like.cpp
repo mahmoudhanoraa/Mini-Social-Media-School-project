@@ -31,7 +31,7 @@ Like::~Like() {
 }
 
 void Like::toString() {
-    cout << "Like " << endl;
+    std::cout << "Like " << std::endl;
     this->date->toString();
     this->owner->toString();
 }

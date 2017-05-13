@@ -4,7 +4,7 @@
 
 User::User(string &userName, string &password, string &email, int id) : userName(userName),
                                                                         password(password), email(email), userId(id) {
-    profile = new Profile();
+    profile = NULL;
 }
 
 
@@ -65,11 +65,20 @@ void User::setFriends(vector<User *> &friends) {
 }
 
 void User::toString() {
-    cout << "User id : " << this->userId << endl;
-    cout << "User name : " << this->userName << endl;
-    cout << "User Password : " << this->password << endl;
-    cout << "User Email : " << this->email << endl;
-    this->profile->toString();
-    cout << "Number of Friends : " << this->friends.size() << endl;
-    cout << "Number of Blocked : " << this->blocked.size() << endl;
+    std::cout << "User id : " << this->userId << std::endl;
+    std::cout << "User name : " << this->userName << std::endl;
+    std::cout << "User Password : " << this->password << std::endl;
+    std::cout << "User Email : " << this->email << std::endl;
+    if(this->profile != NULL)
+        this->profile->toString();
+    else
+        std::cout << "Has No Profile " << endl;
+    if(!this->friends.empty())
+        std::cout << "Number of Friends : " << this->friends.size() << std::endl;
+    else
+        std::cout << "Has no friends" << endl;
+    if(!this->blocked.empty())
+        std::cout << "Number of Blocked : " << this->blocked.size() << std::endl;
+    else
+        std::cout << "Has no Blocked " << endl;
 }

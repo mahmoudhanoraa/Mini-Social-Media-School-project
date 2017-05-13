@@ -12,27 +12,27 @@ class Post;
 class Profile {
 private:
     User *user;
-    list<Post*> posts;
+    vector<Post*> posts;
     string status;
     string profilePic;
 public:
-    Profile(User *user, const string &status, const string &profilePic);
+    Profile(User *user,const string &status,const string &profilePic);
 
-    User *getUser() const;
+    User *getUser();
     Profile();
     void setUser(User *user);
 
-    const list<Post *> &getPosts() const;
+    vector<Post *> &getPosts();
 
-    void setPosts(const list<Post *> &posts);
+    void setPosts(vector<Post *> &posts);
 
-    const string &getStatus() const;
+    string &getStatus() ;
 
-    void setStatus(const string &status);
+    void setStatus(string &status);
 
-    const string &getProfilePic() const;
+    string &getProfilePic();
 
-    void setProfilePic(const string &profilePic);
+    void setProfilePic(string &profilePic);
 
     void toString();
 

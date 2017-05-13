@@ -1,13 +1,13 @@
 #include <iostream>
 #include "Post.h"
 
-Post::Post(User *owner, const string &content) : owner(owner), content(content) {
+Post::Post(User *owner,const string &content) : owner(owner), content(content) {
     time_t now = time(0);
     string dt = ctime(&now);
     this->date = new Date(dt);
 }
 
-Date *Post::getDate() const {
+Date *Post::getDate(){
     return date;
 }
 
@@ -15,7 +15,7 @@ void Post::setDate(Date *date) {
     Post::date = date;
 }
 
-User *Post::getOwner() const {
+User *Post::getOwner(){
     return owner;
 }
 
@@ -23,27 +23,27 @@ void Post::setOwner(User *owner) {
     Post::owner = owner;
 }
 
-const vector<Like *> &Post::getLikes() const {
+vector<Like *> &Post::getLikes(){
     return likes;
 }
 
-void Post::setLikes(const vector<Like *> &likes) {
+void Post::setLikes(vector<Like *> &likes) {
     Post::likes = likes;
 }
 
-const vector<Comment *> &Post::getComments() const {
+vector<Comment *> &Post::getComments(){
     return comments;
 }
 
-void Post::setComments(const vector<Comment *> &comments) {
+void Post::setComments(vector<Comment *> &comments) {
     Post::comments = comments;
 }
 
-const string &Post::getContent() const {
+string &Post::getContent(){
     return content;
 }
 
-void Post::setContent(const string &content) {
+void Post::setContent(string &content) {
     Post::content = content;
 }
 
@@ -52,12 +52,18 @@ Post::~Post() {
     delete (date);
 }
 
-void Post::toString() {
-    cout << "Post " << endl;
+void Post::toString(){
+    std::cout << "Post " << std::endl;
     this->date->toString();
-    this->owner->toString();
-    cout << "Number of Comments : " << ' ' << this->comments.size() << endl;
-    cout << "Number of Likes : " << ' ' << this->likes.size() << endl;
-    cout << this->content << endl;
+    std::cout << "Owner of the post : " << this->owner->getUserName() << std::endl;
+    if(!this->comments.empty())
+        std::cout << "Number of Comments : " << ' ' << this->comments.size() << std::endl;
+    else
+        cout << "This Post has no comments " << endl;
+    if(!this->likes.empty())
+        std::cout << "Number of Likes : " << ' ' << this->likes.size() << std::endl;
+    else
+        cout << "This Post has no Likes "<< endl;
+    std::cout << this->content << std::endl;
 }
 

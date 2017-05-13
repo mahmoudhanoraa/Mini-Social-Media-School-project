@@ -16,8 +16,6 @@ class Date {
     static const map<string, int> days;
 
 public:
-    Date();
-    Date(int minutes, int hour, int day, int month, int year);
     Date(string &date);
 
     int getMinutes() const;

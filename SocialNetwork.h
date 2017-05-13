@@ -46,7 +46,10 @@ public:
     void getTimeline(int);
 
     // function to suggest friend by ID
-    vector<User*> suggestFrinds(int);
+    vector<User*> suggestFriends(int);
+
+    void publishPost(Post*, User*);
+    void publishPost(Post*, Group*);
 
 };
 

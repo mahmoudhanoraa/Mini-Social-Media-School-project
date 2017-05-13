@@ -1,10 +1,6 @@
 #include <iostream>
 #include "Date.h"
 
-Date::Date() {}
-
-Date::Date(int minutes, int hour, int day, int month, int year) : minutes(minutes), hour(hour), day(day), month(month),
-                                                                  year(year) {}
 
 int Date::getMinutes() const {
     return minutes;
@@ -111,6 +107,6 @@ Date::Date(string &date) {
 }
 
 void Date::toString() {
-    cout << "Date : " << endl;
-    cout << this->getDay() << " / " <<this->getMonth()<< " / " << this->getYear() << endl;
+    std::cout << "Date : " << std::endl;
+    std::cout << this->getDay() << " / " <<this->getMonth()<< " / " << this->getYear() << std::endl;
 }

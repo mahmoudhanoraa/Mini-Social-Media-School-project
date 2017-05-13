@@ -22,27 +22,27 @@ private:
     string content;
 
 public:
-    Post(User *owner, const string &content);
+    Post(User *owner,const string &content);
 
-    Date *getDate() const;
+    Date *getDate();
 
     void setDate(Date *date);
 
-    User *getOwner() const;
+    User *getOwner();
 
     void setOwner(User *owner);
 
-    const vector<Like *> &getLikes() const;
+    vector<Like *> &getLikes();
 
-    void setLikes(const vector<Like *> &likes);
+    void setLikes(vector<Like *> &likes);
 
-    const vector<Comment *> &getComments() const;
+    vector<Comment *> &getComments();
 
-    void setComments(const vector<Comment *> &comments);
+    void setComments(vector<Comment *> &comments);
 
-    const string &getContent() const;
+    string &getContent();
 
-    void setContent(const string &content);
+    void setContent(string &content);
 
     void toString();
 

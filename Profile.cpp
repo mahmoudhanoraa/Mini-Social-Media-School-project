@@ -2,10 +2,10 @@
 #include "Profile.h"
 
 
-Profile::Profile(User *user, const string &status, const string &profilePic) : user(user), status(status),
+Profile::Profile(User *user, const string &status,const string &profilePic) : user(user), status(status),
                                                                                profilePic(profilePic) {}
 
-User *Profile::getUser() const {
+User *Profile::getUser()  {
     return user;
 }
 
@@ -13,27 +13,27 @@ void Profile::setUser(User *user) {
     Profile::user = user;
 }
 
-const list<Post *> &Profile::getPosts() const {
+vector<Post *> &Profile::getPosts() {
     return posts;
 }
 
-void Profile::setPosts(const list<Post *> &posts) {
+void Profile::setPosts(vector<Post *> &posts) {
     Profile::posts = posts;
 }
 
-const string &Profile::getStatus() const {
+string &Profile::getStatus(){
     return status;
 }
 
-void Profile::setStatus(const string &status) {
+void Profile::setStatus(string &status) {
     Profile::status = status;
 }
 
-const string &Profile::getProfilePic() const {
+string &Profile::getProfilePic(){
     return profilePic;
 }
 
-void Profile::setProfilePic(const string &profilePic) {
+void Profile::setProfilePic(string &profilePic) {
     Profile::profilePic = profilePic;
 }
 
@@ -47,9 +47,12 @@ Profile::~Profile() {
 }
 
 void Profile::toString() {
-    cout << "Profile " << endl;
-    this->user->toString();
-    cout << "Number of Posts : " << ' ' << this->posts.size() << endl;
-    cout << "Status : " << this->status << endl;
-    cout << "Profile Pic " << this->profilePic << endl;
+    std::cout << "Profile " << std::endl;
+    std::cout << "The owner Name : " << this->user->getUserName() << endl;
+    if(!this->getPosts().empty())
+        std::cout << "Number of Posts : " << ' ' << this->posts.size() << std::endl;
+    else
+        std::cout << "You did not post any thing"<< endl;
+    std::cout << "Status : " << this->status << std::endl;
+    std::cout << "Profile Pic " << this->profilePic << std::endl;
 }

@@ -58,17 +58,18 @@ Group::~Group() {
 }
 
 void Group::toString() {
-    cout << "Group " << endl;
-    cout << this->groupName << endl;
+    std::cout << "Group " << std::endl;
+    std::cout << this->groupName << std::endl;
     this->date->toString();
-    cout << "Number Of Admins : " << ' ' << this->admins.size() << endl;
-    cout << "Number Of Members : " << ' ' << this->users.size() << endl;
-    cout << "Number Of Posts : " << ' ' << this->posts.size() << endl;
-    cout << "Number Of Blocked : " << ' ' << this->blocked.size() << endl;
+    std::cout << "Number Of Admins : " << ' ' << this->admins.size() << std::endl;
+    std::cout << "Number Of Members : " << ' ' << this->users.size() << std::endl;
+    std::cout << "Number Of Posts : " << ' ' << this->posts.size() << std::endl;
+    std::cout << "Number Of Blocked : " << ' ' << this->blocked.size() << std::endl;
 }
 
-Group::Group(int, string &) {
-
+Group::Group(int id, string &name) {
+    this->groupId = id;
+    this->groupName = name;
 }
 
 const string &Group::getGroupName() const {
